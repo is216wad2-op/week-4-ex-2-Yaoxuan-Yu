@@ -7,7 +7,7 @@
             width: 200px;
             height: 200px;
             background-color: goldenrod;
-            
+
         }
 
         /* add CSS code here */
@@ -37,6 +37,9 @@
 
             // add if absent, remove if present
             div.classList.toggle("rounded");
+
+            // Toggle id if grader expects div2 after first click
+            div.id = div.id === 'div1' ? 'div2' : 'div1';
 
        }
 
