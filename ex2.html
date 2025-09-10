@@ -33,7 +33,8 @@
        // add code here
        function changeShape(){
 
-            var div = document.getElementById("div1");
+            var div = document.getElementById("div1") || document.getElementById("div2");
+; 
 
             // add if absent, remove if present
             div.classList.toggle("rounded");
