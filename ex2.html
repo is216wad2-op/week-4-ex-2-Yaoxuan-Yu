@@ -7,9 +7,14 @@
             width: 200px;
             height: 200px;
             background-color: goldenrod;
+            
         }
 
         /* add CSS code here */
+        .rounded {
+            
+            border-radius: 50%;
+        }
 
     </style>
 
@@ -26,6 +31,14 @@
     <script>
         
        // add code here
+       function changeShape(){
+
+            var div = document.getElementById("div1");
+
+            // add if absent, remove if present
+            div.classList.toggle("rounded");
+
+       }
 
     </script>
 
